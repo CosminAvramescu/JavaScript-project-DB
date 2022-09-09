@@ -1,0 +1,7 @@
+M-am folosit de fetch pentru a prelua datele de la API TMDB, iar promisiunile rezultate sunt asteptate cu await si
+prelucrate ulterior. Am lasat randuri mai lungi in javascript pentru ca inserez cod html in functii si ma gandeam
+ca se citesc mai usor asa decat daca imparteam string-ul in mai multe randuri. La carduri si paginare inserez cod
+html din javascript. Toate butoanele de la paginare functioneaza, putem apasa direct pe o pagina sau putem apasa
+next si previous. Am folosit Bootstrap si eventListener. Am incercat sa fac cat mai functional site-ul, sa poti trece
+din orice parte in alta parte. Articolele sunt in interiorul cardurilor. Am implementat toate cerintele. Dupa fiecare
+incarcare de pagina noua dau scroll top. La next si previous m-am folosit de nextSibling si previousSibling.

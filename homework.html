@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+    <script src="javascript.js" defer></script>
+    <link rel="icon" href="pictures/logo.png">
+</head>
+
+<header class="m-3">
+    <div class="row" id="header">
+        <div class="col-2">
+            <img id="logo" class="w-75 mt-5 mb-5" src="pictures/logo.png" alt="Logo">
+        </div>
+        <div class="col-8 text-center pt-5 mt-4">
+            <h1 style="font-family: 'Californian FB', cursive;">LIGHT UPON MOVIES</h1>
+            <h4 style="font-family: 'Brush Script MT', cursive;">Bring Quality Closer</h4>
+        </div>
+    </div>
+</header>
+
+<body>
+<div class="container-fluid">
+    <div class="row p-5">
+        <div class="col-4 w-25" id="left-nav">
+            <nav class="navbar justify-content-center pt-5">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <div class="btn-group">
+                            <select id="dd-menu" class="form-select" aria-label="Genre Selector">
+                                <option value="0" selected>Select Genre</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light" onclick="generateTrendingMovies(1)">Trending movies
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-8 w-75">
+            <main class="card w-100" style="background-color: #cae7ff;">
+                <h5 class="card-title text-center pt-5" id="wrapper-card-text"></h5>
+                <div id="wrapper-card" class="card-body m-5"></div>
+                <nav aria-label="Page navigation example" class="m-3">
+                    <ul class="pagination justify-content-end" id="pag"></ul>
+                </nav>
+            </main>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer class="m-3">
+    <div class="row col-12" id="footer">
+        My energy and work consistency get me beyond any obstacle!
+    </div>
+</footer>
+</html>

@@ -1,0 +1,29 @@
+html > body {
+    width: 100%;
+    background-color: #cae7ff;
+}
+
+.container-fluid > div {
+    width: 100%;
+}
+
+#header, #footer {
+    background-color: #25cff2;
+    justify-content: center;
+}
+
+#left-nav {
+    background-color: #25cff2;
+}
+
+.card, #left-nav {
+    border: 2px solid black;
+}
+
+#wrapper-card {
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #25cff2;
+}
