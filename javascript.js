@@ -42,7 +42,6 @@ async function generateTrendingMovies(pageNumber) {
         let response = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=a4f0b68d7157e9413265bd7875ece499&page=' + pageNumber);
         let jsonResponse = JSON.parse(JSON.stringify(await response.json()));
         clearCards();
-        resetPagination()
         document.getElementById("wrapper-card-text").innerText = "Trending Movies";
         for (movie of jsonResponse.results) {
             renderCards(movie)
